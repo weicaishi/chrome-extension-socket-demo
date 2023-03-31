@@ -1,0 +1,22 @@
+{
+  "name": "chrome_ext_tcp_socket",
+  "version": "0.1",
+  "manifest_version": 3,
+  "minimum_chrome_version": "23",
+  "app": {
+    "background": {
+      "scripts": [
+        "udp.js"
+      ]
+    }
+  },
+  "sockets": {
+    "udp": {
+      "send": [
+        "127.0.0.1:8000",
+        ":8001"
+      ],
+      "bind": ":8000"
+    }
+  }
+}

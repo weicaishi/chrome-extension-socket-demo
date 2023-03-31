@@ -1,0 +1,18 @@
+{
+  "name": "tcp_server",
+  "version": "0.1",
+  "manifest_version": 3,
+  "minimum_chrome_version": "23",
+  "app": {
+    "background": {
+      "scripts": [
+        "server.js"
+      ]
+    }
+  },
+  "sockets": {
+    "tcpServer": {
+      "listen": ":3001"
+    }
+  }
+}
